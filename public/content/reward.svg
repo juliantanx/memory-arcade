@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title">
+  <title id="title">Hidden reward placeholder</title><rect width="640" height="480" fill="#f1e9d8"/>
+  <path d="M150 194h340v214H150Z" fill="#ba493f" stroke="#152337" stroke-width="12"/><path d="M112 138h416v92H112Z" fill="#f3b33d" stroke="#152337" stroke-width="12"/>
+  <path d="M286 138h68v270h-68Z" fill="#fff4dc"/><path d="M320 138c-70-10-116-44-98-82 18-36 88 12 98 82Zm0 0c70-10 116-44 98-82-18-36-88 12-98 82Z" fill="#d76572" stroke="#152337" stroke-width="10"/>
+  <text x="320" y="452" text-anchor="middle" fill="#152337" font-family="monospace" font-size="20">YOUR REWARD HERE</text>
+</svg>

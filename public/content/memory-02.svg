@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title">
+  <title id="title">Memory placeholder 02</title><rect width="640" height="480" fill="#152337"/>
+  <g fill="#f3b33d"><circle cx="92" cy="82" r="5"/><circle cx="182" cy="126" r="3"/><circle cx="330" cy="74" r="4"/><circle cx="516" cy="114" r="6"/></g>
+  <path d="M80 394h480V220L430 152l-86 72-102-104L80 256Z" fill="#397889"/><path d="M116 394h408V264l-94-64-86 70-100-94-128 102Z" fill="#f1e9d8"/>
+  <text x="34" y="442" fill="#f3b33d" font-family="monospace" font-size="22">MEMORY 02 · REPLACE THIS IMAGE</text>
+</svg>

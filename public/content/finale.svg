@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title">
+  <title id="title">Two pixel players placeholder</title><rect width="640" height="480" fill="#101826"/>
+  <g shape-rendering="crispEdges"><path fill="#f3b33d" d="M122 82h112v32h32v96h-32v160H122V210H90v-96h32Z"/><path fill="#d76572" d="M406 82h112v32h32v96h-32v160H406V210h-32v-96h32Z"/>
+  <path fill="#fff4dc" d="M138 130h80v64h-80zm284 0h80v64h-80z"/><path fill="#152337" d="M154 150h16v16h-16zm48 0h16v16h-16zm236 0h16v16h-16zm48 0h16v16h-16z"/>
+  <path fill="#fff4dc" d="M250 250h32v32h32v32h32v-32h32v-32h32v64h-32v32h-32v32h-32v-32h-32v-32h-32Z"/></g>
+  <text x="320" y="430" text-anchor="middle" fill="#fff4dc" font-family="monospace" font-size="20">REPLACE WITH YOUR FINALE ART</text>
+</svg>

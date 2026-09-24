@@ -1,0 +1,12 @@
+{
+  "name": "拾光冒险 · Memory Arcade",
+  "short_name": "拾光冒险",
+  "description": "把回忆做成一场可以亲自完成的像素闯关",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f1e9d8",
+  "theme_color": "#ba493f",
+  "lang": "zh-CN",
+  "orientation": "any"
+}
