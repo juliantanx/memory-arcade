@@ -1,5 +1,7 @@
 export const TILE_SIZE = 16;
 export const GOAL_X = 2816;
+export const FINISH_HOME_X = GOAL_X + 128;
+export const FINISH_HOME_DOOR_X = FINISH_HOME_X + 23;
 export const OVERWORLD_WIDTH = 3040;
 export const UNDERGROUND_WIDTH = 512;
 export const FIXED_STEP = 1 / 120;

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { GOAL_X, TILE_SIZE } from './constants.js';
+import { FINISH_HOME_DOOR_X, FINISH_HOME_X, GOAL_X, TILE_SIZE } from './constants.js';
 import { GameWorld } from './GameWorld.js';
 import { createOverworldLevel, createUndergroundLevel } from './level.js';
 
@@ -59,6 +59,14 @@ describe('open-source level contract', () => {
         if (overlaps && headroom >= 0) expect(headroom).toBeGreaterThanOrEqual(minimumHeadroom);
       }
     }
+  });
+
+  it('keeps the finish staircase clear of the house', () => {
+    const level = createOverworldLevel();
+    const finishStairs = level.blocks.filter((item) => item.type === 'stair' && item.x > GOAL_X);
+    const lastStairEdge = Math.max(...finishStairs.map((item) => item.x + TILE_SIZE));
+    const roofEdge = FINISH_HOME_X - 6;
+    expect(lastStairEdge).toBeLessThanOrEqual(roofEdge);
   });
 });
 
@@ -128,6 +136,16 @@ describe('collection and reveal gates', () => {
     expect(world.assembleFragments()).toBe(true); expect(world.status).toBe('assembling');
     world.revealFinale(); expect(world.status).toBe('finale');
     world.celebrate(); expect(world.status).toBe('celebrated');
+  });
+});
+
+describe('finish sequence', () => {
+  it('walks the player to the relocated house door', () => {
+    const world = new GameWorld();
+    world.win();
+    world.updateWinning(5);
+    expect(world.player.x).toBe(FINISH_HOME_DOOR_X);
+    expect(world.status).toBe('results');
   });
 });
 

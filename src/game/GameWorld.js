@@ -1,5 +1,5 @@
 import { MEMORIES } from '../content/story.js';
-import { DEFAULT_FAILURE_LIMIT, GOAL_X, OVERWORLD_WIDTH, UNDERGROUND_WIDTH } from './constants.js';
+import { DEFAULT_FAILURE_LIMIT, FINISH_HOME_DOOR_X, GOAL_X, OVERWORLD_WIDTH, UNDERGROUND_WIDTH } from './constants.js';
 import { createOverworldLevel, createUndergroundLevel } from './level.js';
 
 function createPlayer(overrides = {}) {
@@ -208,7 +208,7 @@ export class GameWorld {
   updateWinning(delta) {
     this.winTimer += delta; this.flagY = Math.min(176, this.flagY + 65 * delta);
     if (this.winTimer < 2) { this.player.y = Math.min(192 - this.player.h, this.player.y + 85 * delta); this.player.grounded = false; }
-    else { this.player.grounded = true; this.player.y = 208 - this.player.h; this.player.x = Math.min(GOAL_X + 112, this.player.x + 55 * delta); this.player.walk += delta * 10; }
+    else { this.player.grounded = true; this.player.y = 208 - this.player.h; this.player.x = Math.min(FINISH_HOME_DOOR_X, this.player.x + 55 * delta); this.player.walk += delta * 10; }
     if (this.winTimer >= 4.7) { this.score += Math.ceil(this.time) * 50; this.time = 0; this.status = 'results'; }
   }
   updatePlayer(delta, input) {

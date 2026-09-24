@@ -1,4 +1,4 @@
-import { GOAL_X } from './constants.js';
+import { FINISH_HOME_X, GOAL_X } from './constants.js';
 
 const PALETTES = [
   ['#8fd7e8', '#d9f1e9'],
@@ -190,7 +190,7 @@ export class CanvasRenderer {
     context.lineTo(x + 8, world.flagY + 18);
     context.fill();
     this.pixelHeart(x - 7, world.flagY + 6, '#fff4dc', 1);
-    this.drawHome(x + 66, 146);
+    this.drawHome(FINISH_HOME_X - world.camera, 146);
   }
 
   drawHome(x, y) {
