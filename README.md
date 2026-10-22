@@ -140,6 +140,8 @@ BASE_PATH=/your-repository/ npm run build
 
 见 [`CONTRIBUTING.md`](CONTRIBUTING.md)。安全问题请按 [`SECURITY.md`](SECURITY.md) 处理。
 
+社区交流：[Linux DO](https://linux.do/)
+
 ## License
 
 [MIT](LICENSE)
